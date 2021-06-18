@@ -231,12 +231,12 @@ function getOptions(userOptions) {
     },
     locale: {
       //*
-      name: 'en',
-      weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+      name: 'zh',
+      weekdays: '星期一_星期二_星期三_星期四_星期五_星期六_星期日'.split('_'),
       weekdaysShort: 'Sun_Mon_Tue_Wed_Thu_Fri_Sat'.split('_'),
       weekdaysMin: 'Su_Mo_Tu_We_Th_Fr_Sa'.split('_'),
-      months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
-      monthsShort: 'Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec'.split('_'),
+      months: '1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月'.split('_'),
+      monthsShort: '1_2_3_4_5_6_7_8_9_10_11_12'.split('_'),
       weekStart: 1,
       relativeTime: {
         future: 'in %s',

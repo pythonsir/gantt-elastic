@@ -40,7 +40,7 @@
       const tasks = [
         {
           id: 1,
-          label: 'Make some noise',
+          label: '施工准备',
           user:
             '<a href="https://www.google.com/search?q=John+Doe" target="_blank" style="color:#0077c0;">John Doe</a>',
           start: getDate(-24 * 5),
@@ -50,7 +50,7 @@
         },
         {
           id: 2,
-          label: 'With great power comes great responsibility',
+          label: '土方、支护和基础桩施工',
           user:
             '<a href="https://www.google.com/search?q=Peter+Parker" target="_blank" style="color:#0077c0;">Peter Parker</a>',
           parentId: 1,
@@ -74,7 +74,7 @@
         },
         {
           id: 3,
-          label: 'Courage is being scared to death, but saddling up anyway.',
+          label: '输干井施工',
           user:
             '<a href="https://www.google.com/search?q=John+Wayne" target="_blank" style="color:#0077c0;">John Wayne</a>',
           parentId: 2,
@@ -85,7 +85,7 @@
         },
         {
           id: 4,
-          label: 'Put that toy AWAY!',
+          label: '支护和土方施工',
           user:
             '<a href="https://www.google.com/search?q=Clark+Kent" target="_blank" style="color:#0077c0;">Clark Kent</a>',
           start: getDate(-24 * 2),
@@ -130,7 +130,7 @@
         },
         {
           id: 7,
-          label: 'Devon, the old man wanted me, it was his dying request',
+          label: '支护和土方施工',
           user:
             '<a href="https://www.google.com/search?q=Knight+Rider" target="_blank" style="color:#0077c0;">Knight Rider</a>',
           parentId: 2,
@@ -198,41 +198,41 @@
           columns: [
             {
               id: 1,
-              label: 'ID',
+              label: '序号',
               value: 'id',
               width: 40
             },
             {
               id: 2,
-              label: 'Description',
+              label: '任务名称',
               value: 'label',
               width: 200,
               expander: true
             },
+            // {
+            //   id: 3,
+            //   label: 'Assigned to',
+            //   value: 'user',
+            //   width: 130,
+            //   html: true
+            // },
             {
               id: 3,
-              label: 'Assigned to',
-              value: 'user',
-              width: 130,
-              html: true
-            },
-            {
-              id: 3,
-              label: 'Start',
+              label: '开始日期',
               value: task => dayjs(task.start).format('YYYY-MM-DD'),
               width: 78
             },
             {
               id: 4,
-              label: 'Type',
-              value: 'type',
+              label: '结束日期',
+              value: '',
               width: 68
             },
             {
               id: 5,
-              label: '%',
+              label: '进度百分比',
               value: 'progress',
-              width: 35,
+              width: 100,
               style: {
                 'task-list-header-label': {
                   'text-align': 'center',
